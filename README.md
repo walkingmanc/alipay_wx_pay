@@ -89,7 +89,7 @@ mongod --dbpath=/data/db --logpath=/data/db/logs.log --logappend --port=6699 --f
 
                           图4
 
-不知道如何获取支付宝收款userid的可以联系我。
+不知道如何获取支付宝收款userid的可以联系我微信：walkingman_c。
 
 
 #### 7. 启动应用
