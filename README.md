@@ -24,6 +24,7 @@ unzip  alipay_wx_pay-master.zip
 #### 3. 安装依赖包。
 进入解压后的目录alipay_wx_pay-master，执行：npm  install 安装依赖包。
 ![图2](https://github.com/walkingmanc/MyPostImage/blob/master/alipay_wx_pay/2.png)
+
 图2 
 #### 4. 安装并配置mongo数据库
  
