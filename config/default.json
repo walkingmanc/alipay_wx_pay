@@ -1,0 +1,11 @@
+{       
+        "database":{
+                "mongodburl":""
+        },
+        "secret":{
+                "financepostpass":""
+        },
+        "transfercode":{
+                "userid":""
+        }
+}
