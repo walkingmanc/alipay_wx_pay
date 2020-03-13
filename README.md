@@ -63,6 +63,46 @@ mongod --dbpath=/data/db --logpath=/data/db/logs.log --logappend --port=6699 --f
 > exit
 
 
+#### 5. 配置项目数据库连接地址
+打开config/default.json  按照图3 所示修改数据库连接字符串。
+
+图3 
+
+#### 6. 配置支付宝收款的userid
+
+支付宝收款userid是用来区分使用哪个支付宝账户进行收款的唯一标识，需要在config/default.json 中进行配置。
+
+如图4
+
+
+不知道如何获取支付宝收款userid的可以联系我。
+
+
+#### 7. 启动应用
+ npm start 
+ 
+ 图 5
+ 
+ 默认监听端口是3000。
+ 
+ ###  验证测试
+ 
+ 在浏览器中输入：http://47.97.103.169/show/alipay/get_transfer_code/66.66/withremark/%E8%AF%95%E4%B8%80%E4%B8%8B
+ 
+ 请将地址中的ip地址替换成你自己的服务器ip地址。
+ 
+ 如图6，表示服务器搭建成功。
+ 
+ 
+ 图6 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 视频教程地址：
+
 
