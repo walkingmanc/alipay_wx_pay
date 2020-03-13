@@ -14,7 +14,8 @@ centos、nodejs、nginx。
 输入 rz ，选择下载好的zip 源码文件上传。
 
 ![图1](https://github.com/walkingmanc/MyPostImage/blob/master/alipay_wx_pay/1.png)
-  图1
+ 
+                    图1
 
 
 
@@ -25,7 +26,7 @@ unzip  alipay_wx_pay-master.zip
 进入解压后的目录alipay_wx_pay-master，执行：npm  install 安装依赖包。
 ![图2](https://github.com/walkingmanc/MyPostImage/blob/master/alipay_wx_pay/2.png)
 
-图2 
+                          图2 
 #### 4. 安装并配置mongo数据库
  
 下载完安装包，并解压 tgz
@@ -67,7 +68,8 @@ mongod --dbpath=/data/db --logpath=/data/db/logs.log --logappend --port=6699 --f
 #### 5. 配置项目数据库连接地址
 打开config/default.json  按照图3 所示修改数据库连接字符串。
 ![图3](https://github.com/walkingmanc/MyPostImage/blob/master/alipay_wx_pay/3.png)
-图3 
+
+                           图3 
 
 #### 6. 配置支付宝收款的userid
 
@@ -75,7 +77,8 @@ mongod --dbpath=/data/db --logpath=/data/db/logs.log --logappend --port=6699 --f
 
 如图4
 ![图4](https://github.com/walkingmanc/MyPostImage/blob/master/alipay_wx_pay/4.png)
-图4
+
+                          图4
 
 不知道如何获取支付宝收款userid的可以联系我。
 
@@ -83,7 +86,8 @@ mongod --dbpath=/data/db --logpath=/data/db/logs.log --logappend --port=6699 --f
 #### 7. 启动应用
  npm start 
  ![图5](https://github.com/walkingmanc/MyPostImage/blob/master/alipay_wx_pay/5.png)
- 图 5
+ 
+                             图 5
  
  默认监听端口是3000。
  
@@ -96,7 +100,8 @@ mongod --dbpath=/data/db --logpath=/data/db/logs.log --logappend --port=6699 --f
  如图6，表示服务器搭建成功。
  
  ![图6](https://github.com/walkingmanc/MyPostImage/blob/master/alipay_wx_pay/6.png)
- 图6 
+
+                          图6 
  
  
  
