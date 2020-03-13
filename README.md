@@ -18,7 +18,50 @@ centos、nodejs、nginx。
 
 
 
-#### 2. unzip 
+#### 2. 解压。
+unzip  alipay_wx_pay-master.zip
+
+#### 3. 安装依赖包。
+进入解压后的目录alipay_wx_pay-master，执行：npm  install 安装依赖包。
+
+图2 
+#### 4. 安装并配置mongo数据库
+ 
+下载完安装包，并解压 tgz
+
+> curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.6.tgz    # 下载
+> tar -zxvf mongodb-linux-x86_64-3.0.6.tgz                                   # 解压
+
+> mv  mongodb-linux-x86_64-3.0.6/ /usr/local/mongodb    # 将解压包拷贝到指定目录                   
+
+将MongoDB 的可执行文件bin 目录添加到 PATH 路径中：
+> export PATH=/usr/local/mongodb/bin:$PATH
+
+创建数据库目录
+mkdir -p /data/db
+
+创建数据库日志文件
+touch /data/db/logs.log
+
+启动mongodb数据库服务
+mongod --dbpath=/data/db --logpath=/data/db/logs.log --logappend --port=6699 --fork
+
+创建数据库连接用户
+
+> $ mongo
+
+> use admin
+
+> db.createUser(
+     {
+       user:"maxsu",
+       pwd:"pwd123",
+       roles:[{role:"root",db:"admin"}]
+     }
+  )
+
+> exit
+
 
 
 视频教程地址：
