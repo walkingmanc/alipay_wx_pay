@@ -38,22 +38,26 @@ unzip  alipay_wx_pay-master.zip
  mv  mongodb-linux-x86_64-3.0.6/ /usr/local/mongodb    # 将解压包拷贝到指定目录                   
 ```
 将MongoDB 的可执行文件bin 目录添加到 PATH 路径中：
->  '''
->  export PATH=/usr/local/mongodb/bin:$PATH
-> '''
+```
+  export PATH=/usr/local/mongodb/bin:$PATH
+```
 
 创建数据库目录
+```
 mkdir -p /data/db
+```
 
 创建数据库日志文件
+```
 touch /data/db/logs.log
-
+```
 启动mongodb数据库服务
+```
 mongod --dbpath=/data/db --logpath=/data/db/logs.log --logappend --port=6699 --fork
-
+```
 创建数据库连接用户
 
-> '''
+```
 > $ mongo
 
 > use admin
@@ -68,7 +72,7 @@ mongod --dbpath=/data/db --logpath=/data/db/logs.log --logappend --port=6699 --f
 
 > exit
 
-> '''
+```
 
 #### 5. 配置项目数据库连接地址
 打开config/default.json  按照图3 所示修改数据库连接字符串。
