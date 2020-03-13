@@ -58,19 +58,19 @@ mongod --dbpath=/data/db --logpath=/data/db/logs.log --logappend --port=6699 --f
 创建数据库连接用户
 
 ```
-> $ mongo
+ $ mongo
 
-> use admin
+ use admin
 
-> db.createUser(
->     {
->       user:"maxsu",
->      pwd:"pwd123",
->       roles:[{role:"root",db:"admin"}]
->     }
->  )
+ db.createUser(
+    {
+      user:"maxsu",
+    pwd:"pwd123",
+     roles:[{role:"root",db:"admin"}]
+    }
+  )
 
-> exit
+ exit
 
 ```
 
